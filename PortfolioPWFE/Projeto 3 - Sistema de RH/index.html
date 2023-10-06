@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Hora Extra</title>
+    <style>
+        form > a{
+            width: 80%;
+            margin: 3% 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img id="foto" src="imagens/logo.png" alt="icone">
+            <h1>EMPRESA BOM NEGÓCIO</h1>
+        </div>
+        <div style="width:100%;text-align: right;font-size:10px;" id="mostraHora"></div>
+    </header>
+    <div class="box">
+        <h1>Menu Principal</h1>
+        <div class="box_form">
+            <form>  
+                    <a onmousemove="mudaFoto('imagens/horas_extras.png')" onmouseout="mudaFoto('imagens/logo.png')" href="exercício 1/exe1.html"><div class="full_button blue link_estilo"><p>Calculadora de Horas Extras</p></div></a>
+                    <a onmousemove="mudaFoto('imagens/aumento.png')" onmouseout="mudaFoto('imagens/logo.png')" href="exercício 2/exe2.html"><div class="full_button blue link_estilo"><p>Calculadora de Aumento</p></div></a>
+                    <a onmousemove="mudaFoto('imagens/transporte.png')" onmouseout="mudaFoto('imagens/logo.png')" href="exercício 3/exe3.html"><div class="full_button blue link_estilo"><p>Transporte dos Colaboradores</p></div></a>
+            </form>
+        </div>
+    </div>
+    <div class="box" id="res"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

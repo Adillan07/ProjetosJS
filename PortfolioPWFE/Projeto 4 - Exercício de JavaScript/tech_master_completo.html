@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <title>Menu que muda ícone</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <figure><img width="80%" src="img_tech/tecnologia.png" id="icone" ></figure>
+            <h1>Tech Master</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" onmousemove="mudaFoto('img_tech/casa.png')" onmouseout="mudaFoto('img_tech/tecnologia.png')">Principal</a></li>
+                <li><a href="#" onmousemove="mudaFoto('img_tech/computador.png')"btnmuda onmouseout="mudaFoto('img_tech/tecnologia.png')">Computadores</a></li>
+                <li><a href="#" onmousemove="mudaFoto('img_tech/controle-de-video-game.png')" onmouseout="mudaFoto('img_tech/tecnologia.png')">Videogames</a></li>
+                <li><a href="#" onmousemove="mudaFoto('img_tech/celular.png')" onmouseout="mudaFoto('img_tech/tecnologia.png')">Celulares</a></li>
+                <li><a href="#" onmousemove="mudaFoto('img_tech/telefone.png')" onmouseout="mudaFoto('img_tech/tecnologia.png')">Contato</a></li>
+                <li><a href="#" onmousemove="mudaFoto('img_tech/grupo-de-usuarios.png')" onmouseout="mudaFoto('img_tech/tecnologia.png')">Quem somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="row w95 mt2 mb2 pd1">
+
+            <div class="row w70 h100">
+                <div class="cl w14 h100">
+                    <div onmousemove="changeImg('img_tech/pc_da_nasa_cima.png')" onclick="changeImg('img_tech/pc_da_nasa_cima.png')" class="row h33"><img src="img_tech/pc_da_nasa_cima.png" alt="Notebook Positivo visto de cima"></div>
+
+                    <div onmousemove="changeImg('img_tech/pc_da_nasa_frente.png')" onclick="changeImg('img_tech/pc_da_nasa_frente.png')" class="row h33"><img src="img_tech/pc_da_nasa_frente.png" alt="Notebook Positivo visto de frente"></div>
+
+                    <div onmousemove="changeImg('img_tech/pc_da_nasa_fechado.png')" onclick="changeImg('img_tech/pc_da_nasa_fechado.png')" class="row h33"><img src="img_tech/pc_da_nasa_fechado.png" alt="Notebook Positivo fechado"></div>
+                </div><!--14-->
+
+                <div class=" row w86 h100">
+                    <img id="biggerImg" src="img_tech/pc_da_nasa_cima.png" alt="Notebook Positivo visto de cima"> 
+                </div><!--86-->
+            </div><!--70-->
+
+            <div class="cl w30 h100">
+
+                <div class="h50">
+                    <div class="cl w100 h50"><h2 class="w100 mt5 mb10">Notebook Positivo Motion Q464c 64gb 4gb Ram Win10 - Dourado</h2></div>
+                    <div class="cl w100 h50"><p class="w100">Notebook Positivo Motion Q464C 64gb 4Gb RAM Win10 - Dourado
+                        LINDO, PRÁTICO E EFICIENTE!
+                        A Positivo mais uma vez inova, e traz para vocês outra novidade da linha MOTION.
+                        Com um design exuberante e diferenciais surpreendentes, o NOVO Notebook Positivo Motion Q464C foi desenvolvido com foco total no seu conforto e satisfação.</p></div>
+                </div>
+
+                <div class="row w100 h50">
+                    <div class=" w100 h100">
+                        <h1 style="font-size: 48px;"">R$ 2.387,39</h1>
+                        <p>À vista no PIX</p>
+                        <p style="font-size:20px">Em 10x R$238,74 sem juros</p>
+                        <p style="margin-top:6%;font-size:28px;"><strong>Frete Grátis</strong></p>
+                        <a class="link_estilo w100" href="login.html"><div class="btn black">Comprar</div></a>
+                    </div>
+                </div>
+            </div><!--30-->
+        </div><!--row-->
+    </main>
+    <script>
+    let logo = window.document.getElementById("icone")
+    let mainImg = window.document.getElementById("biggerImg")
+    function mudaFoto(item){
+        logo.src = item
+    }
+    function changeImg(item){
+        mainImg.src = item
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Velocidade Orbital</title>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%">
+            <img style="animation: pulo 3s infinite;" src="imagens/satelite.png" alt="icone">
+            <h1>EXERCÍCIOS FRONT-END</h1>
+        </div>
+        <div style="width:100%;text-align: right;font-size:10px;" id="mostraHora"></div>
+    </header>
+    <div class="box">
+        <h1>Calculadora da Velocidade Orbital</h1>
+        <div class="box_form">
+            <form>
+                <div class="insert">
+                        <input type="number" name="raio" id="raio" min="0" placeholder="Distância centro do planeta, m (decimal)" required>
+                        <p>x10</p>
+                        <input type="number" class="exp"min="0" name="raioExp" id="raioExp" required>
+                </div>
+                <div class="insert">
+                    <input type="number" name="massa" id="massa" min="0" placeholder="Massa do astro central, em kg (decimal)" required>
+                    <p>x10</p>
+                    <input type="number" class="exp" min="0" name="raioExp" id="massaExp" required>
+                </div>
+                    <div class="buttons">
+                        <div class="button blue" id="calcular"><p>Calcular</p></div>
+                        <a href="../index.html"><div class="button yellow"><p>Voltar</p></div></a>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <div class="box_res" id="res"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

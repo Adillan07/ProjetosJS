@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+html,body{
+    height: 100%;
+    font-family: 'Open Sans';
+    scroll-behavior: smooth;
+    background-color:#FFA501;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    color: #FFFEFC;
+}
+header nav{
+    width: 55%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #FFFEFC;
+    font-size: 28px;
+}
+header nav ul li a:hover{
+    color:#999998;
+    font-weight: bold;
+}
+#logo_tipo{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.logos,.tipografia{
+    height: 600px;
+    color: #FFFEFC;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-top: 2%;
+}
+.logos{
+    width: 53%;
+    background-color: #9498a0;
+}
+.logos img{
+    width: 200px;
+    height:190px;
+}
+.logos img:nth-of-type(4){
+    width: 680px;
+    height: 180px;
+}
+.logo_titulo,.tipo_titulo{
+    width:100%;
+    font-size: 36.1px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.tipografia{
+    width: 46%;
+    padding: 2% 25px 15px 10px;
+    background-color: #d7a03b;
+}
+.nanum,.open{
+    margin-left: -40px;
+    white-space: pre-wrap;
+}
+.nanum h1,.open h1{
+    font-size: 114px;
+    color: #999998;
+}
+.open h2,.open p{
+    font-size: 25.4px;
+    font-weight: 300;
+}
+.nanum p,.nanum h2{
+    font-size:28px;
+}
+.nanum{
+    width:41%;
+}
+.open{
+    width:40%;
+    position: relative;
+    top:-2em;
+}
+.open h2{
+    position: relative;
+    top:-1.4em;
+}
+.open p{
+    position: relative;
+    top: -2.1em;
+}
+#cores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.cor{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 20%;
+    padding: 1%;
+    text-align: center;
+    color: #FFFEFC;
+    font-size: 28.7px;
+}
+.bola{
+    width: 220px;
+    height: 220px;
+    border: 5px solid #fff;
+    border-radius: 110px;
+}
+.corTexto{
+    margin-top:10px;
+}
+#mockups{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 35px;
+}
+#mockups img{
+    box-shadow: 9px 9px 20px #444;
+    margin-bottom: 15px;
+    transition: transform 0.5s;
+}
+#mockups img:hover{
+    box-shadow: 0 0 0;
+    transform:scale(1.2);
+    z-index: 2;
+}
+footer{
+    margin-top: 25px;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFEFC;
+    font-size: 20px;
+}
+.fim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+@media screen and (max-width:1570px){
+    #mockups img:hover{
+        transform:scale(1.1);
+    }
+}
+@media screen and (max-width:1485px){
+    #mockups img:hover{
+        box-shadow: 9px 9px 20px #444;
+        transform:scale(1);
+        opacity:0.95;
+    }
+    .fim{
+        width:100%;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:1334px){
+    header nav ul li a{
+        font-size: 24px;
+    }
+    .logos,.tipografia{
+        width: 100%;
+        overflow: hidden;
+    }
+    .tipografia{
+        justify-content: center;
+    }
+    .nanum,.open{
+        position: relative;
+        left: 50%;
+        transform: translateX(-75%);
+        width: 50%;
+        margin-left: 0px;
+        white-space: pre-wrap;
+    }
+    .bola{
+        width: 75%;
+        height: 0;
+        padding-top: 75%;
+        border-radius: 100%;
+    } 
+}
+@media screen and (max-width:899px){
+    header nav{
+        display: none;
+    }
+    .logos,.tipografia{
+        height: auto;
+        overflow:visible;
+        padding: 1.5%;
+    }
+    .logos img{
+        width: 75%;
+        height:auto;
+        margin: 10px 0 10px 0;
+    }
+    .logos img:nth-of-type(4){
+        display: none;
+    }
+    #logo_tipo{
+        overflow: hidden;
+    }
+    .nanum,.open{
+        width: 100%;
+        text-align: center;
+        left: 0;
+        transform: translateX(0%);
+    }
+    .cor{
+        width: 100%;
+        margin: 15px 0 15px 0;
+        font-size: 32px;
+    }
+    .cor:nth-of-type(1){
+        margin: 0 0 15px 0;
+    }
+    #mockups img{
+        width:80%;
+        margin-top: 18px;
+    }
+}
+
+

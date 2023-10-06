@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu Principal</title>
+    <style>
+        form > a{
+            width: 80%;
+            margin: 3% 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h1>EXERCÍCIOS FRONT-END</h1>
+        </div>
+        <div style="width:100%;text-align: right;font-size:10px;" id="mostraHora"></div>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h1>Menu Principal</h1>
+            <div class="box_form">
+                <form>  
+                        <a onmousemove="mostraInfo(1)" href="Exercício1/index.html"><div class="full_button blue link_estilo"><p>Calculadora de Velocidade Orbital</p></div></a>
+                        <a onmousemove="mostraInfo(2)" href="Exercício2/index.html"><div class="full_button blue link_estilo"><p>Advinhador de Signo</p></div></a>
+                        <a onmousemove="mostraInfo(3)" href="Exercício3/index.html"><div class="full_button blue link_estilo"><p>Conversor de Fusos Horários</p></div></a>
+                </form>
+            </div>
+        </div>
+        <div class="box_res" id="info"></div>
+    </div>
+<script src="Exercício1/js/script.js"></script>
+</body>
+</html>

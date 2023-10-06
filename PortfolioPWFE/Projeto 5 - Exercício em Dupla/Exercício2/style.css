@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+/* reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+html {
+    background-image: url(https://images8.alphacoders.com/548/548006.jpg);
+    margin-top: 1%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42.45em;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+figure {
+    height: 25em;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    display: none;
+    flex-direction: column;
+}
+
+figure p {
+    margin-top: 5%;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: px solid #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button, input, label {
+    margin-bottom: 5%;
+}
+
+button, input {
+    color: #000;
+}
+
+/* estilo do botao */
+button {
+    --green: #1BFD9C;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+ 
+button:hover {
+color: #82ffc9;
+box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+button:before {
+content: "";
+position: absolute;
+left: -4em;
+width: 4em;
+height: 100%;
+top: 0;
+transition: transform .4s ease-in-out;
+background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+
+button:hover:before {
+transform: translateX(15em);
+}
+
+#res {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+input[type=date] {
+    width: 100px;
+    margin-left: 27%;
+    text-align: center;
+    background: none;
+    color: #fff ;
+}
+
+#button-voltar {
+    --red: #FF0000; /* Defina a cor vermelha desejada aqui */
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--red);
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.1) 1%, transparent 40%, transparent 60%, rgba(255, 0, 0, 0.1) 100%);
+    color: var(--red);
+    box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.4), 0 0 9px 3px rgba(255, 0, 0, 0.1);
+}
+
+#button-voltar:hover {
+    color: #e84d36; /* Cor para quando o botão estiver em hover (pode ser alterada conforme desejado) */
+    box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.6), 0 0 9px 3px rgba(255, 0, 0, 0.2);
+}
+
+#button-voltar:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(255, 0, 0, 0.1) 40%, rgba(255, 0, 0, 0.1) 60%, transparent 100%);
+}
+
+#button-voltar:hover:before {
+    transform: translateX(15em);
+}
+

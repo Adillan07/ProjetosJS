@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Hora Extra</title>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="../imagens/aumento.png" alt="icone">
+            <h1>EMPRESA BOM NEGÓCIO</h1>
+        </div>
+        <div style="width:100%;text-align: right;font-size:10px;" id="mostraHora"></div>
+    </header>
+    <div class="box">
+        <h1>Calculadora de Aumento</h1>
+        <div class="box_form">
+            <form>
+                <input type="number" name="salario" id="salario" placeholder="Salário Atual (R$)" required>
+                <div class="buttons">
+                    <div onclick="aumento()" class="button blue" id="aumento"><p>Enviar</p></div>
+                    <a href="../index.html"><div class="button red"><p>Voltar</p></div></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="box_res" id="res"></div>
+<script src="../js/script.js"></script>
+</body>
+</html>

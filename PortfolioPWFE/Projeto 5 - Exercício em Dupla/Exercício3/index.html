@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de fuso horário</title>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <!-- <img src="../imagens/horas_extras.png" alt="icone"> -->
+            <h1>EMPRESA NOVA TECH</h1>
+        </div>
+        <div id="mostraHora"></div>
+    </header>
+    <div class="box">
+        <h1>Cálculo de Fuso Horário</h1>
+        <div class="box_form">
+            <form>
+                <h2>Escolha para qual fuso-horário você quer converter a hora atual:</h2>
+
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-12">UTC-12:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-11">UTC-11:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-10">UTC-10:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-09">UTC-09:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-08">UTC-08:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-07">UTC-07:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-06">UTC-06:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-05">UTC-05:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-04">UTC-04:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-03">UTC-03:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-02">UTC-02:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc-01">UTC-01:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc±00">UTC±00:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+01">UTC+01:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+02">UTC+02:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+03">UTC+03:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+04">UTC+04:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+05">UTC+05:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+06">UTC+06:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+07">UTC+07:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+08">UTC+08:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+09">UTC+09:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+10">UTC+10:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+11">UTC+11:00</div>
+                <div class="opcao" style="display: flex; align-items: center; justify-content: center; width: 16%"><input type="radio" name="fusoHorario" value="utc+12">UTC+12:00</div>
+                <div class="buttons">
+                    <div onclick="converter()" class="button blue" id="calcular"><p>Converter</p></div>
+                    <a href="../index.html"><div class="button yellow"><p>Voltar</p></div></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="box_res" id="res"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodíaco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Descubra seu signo do zodíaco!</h1>
+    </header>
+
+    <main>
+        <div class="box1">
+            <form>
+                <label for="data">Insira sua data de nascimento</label>
+                <input type="date" id="data" name="data">
+            </form>
+            <button onclick="calcular()">Enviar</button>
+            <p id="res">Seu signo é...</p>
+            <a href="../index.html"><button id="button-voltar">Voltar</button></a>
+
+        </div>
+
+        <div class="box2">
+            <div class="signo-img">
+                <figure id="figura">
+                    <img src="#" id="foto">
+                    <p id="cavaleiro"></p>
+                </figure>
+
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
